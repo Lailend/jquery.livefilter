@@ -5,7 +5,7 @@
  *
  * Forked by Lim Chee Aun (cheeaun.com)
  *
- * Froked by Dirk-Jan Wassink (hylix.nl)
+ * Forked by Dirk-Jan Wassink (hylix.nl)
  */
 
 (function ($) {
