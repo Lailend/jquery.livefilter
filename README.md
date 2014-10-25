@@ -6,6 +6,8 @@ About
 
 A jQuery plugin to filter a list of data or elements. A fork of Mike Merritt's **older** version of [jQuery.liveFilter](https://github.com/mikemerritt/LiveFilter) plugin. I remember the script wasn't on GitHub last time when I fork it.
 
+This plugin is a fork of [cheeaun](https://github.com/cheeaun/jquery.livefilter) however this one has a option to refresh the dataset.
+
 Demo
 ----
 
@@ -17,7 +19,13 @@ Documentation
 ### Syntax
 
 <pre>
-$(<var>selector</var>).liveFilter(<var>input element</var>, <var>element to be filtered</var>, <var>options</var>);
+var liveFilter = $(<var>selector</var>).liveFilter(<var>input element</var>, <var>element to be filtered</var>, <var>options</var>);
+</pre>
+
+### Refresh dataset
+
+<pre>
+liveFilter.refresh();
 </pre>
 
 ### Options
@@ -26,6 +34,7 @@ $(<var>selector</var>).liveFilter(<var>input element</var>, <var>element to be f
 - `filter(function(element, value))` - ( **function**, optional) Executed for filtering the elements based on the input field value.
 - `before()` - ( **function**, optional) Executed before data or elements are filtered.
 - `after()` - ( **function**, optional) Executed after data or elements are filtered.
+- `refresh()` - ( **function**, optional) Executed when the dataset gets refreshed with `liveFilter.refresh()`, containes the new dataset.
 
 License
 -------
